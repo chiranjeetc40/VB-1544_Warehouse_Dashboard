@@ -112,9 +112,11 @@
       }
 	  $('#tableContent').html(trHTML);
 	  var trHTML = '';
-    refreshChart(jsonDataObject);
-    refreshMap(jsonDataObject);
-    	  
+	  
+	
+	setTimeout(() => {  refreshMap(jsonDataObject); }, 100);
+	setTimeout(() => {  refreshChart(jsonDataObject); }, 200);
+
 	});
   }
   
@@ -197,6 +199,7 @@
            
             }
     }
+
 </script>
 
 </html>
